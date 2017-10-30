@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Italian Conversation Topics - Contact Page</title>
+  		<meta name="description" content="Lists of questions for Italian conversation groups and Italian clubs">
+  		<meta name="author" content="Bill Bragg">
+
+  		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div>
+			<a href="landing.html"><img class="header-img" src="italian-flag.jpg"></a>
+			<div class="header">
+				<h1>Italian Conversation Topics - Contact Page</h1>
+				<p>Site Author: Bill Bragg</p>
+				<p>Course: RCS 325 Web Development</p>
+			</div>
+			<nav>
+				<a href="landing.html"><div class="nav-choices">Home</div></a>
+				<a href="links.html"><div class="nav-choices">Links</div></a>
+			</nav>
+		</div>
+		<div>
+			<form name="contactform" action="confirmation.html" method="post" onsubmit="return validateForm()">
+			  <fieldset>
+			  	<label><h2>Contact Us:</h2></label>
+			  	<label>Title:</label></br>
+			  	<select>
+				  <option value="volvo">Choose a title</option>
+				  <option value="mr">Mr.</option>
+				  <option value="mrs">Mrs.</option>
+				  <option value="ms">Ms.</option>
+				  <option value="ms">Miss</option>
+				  <option value="mx">Mx.</option>
+				  <option value="dr">Dr.</option>
+			  	</select></br>
+			    <label>First name:</label></br>
+			    <input type="text" name="firstname" minlegnth="1" maxlength="20"></br>
+			    <label>Last name:</label></br>
+			    <input type="text" name="lastname" minlength="3" maxlength="50"></br>
+			    <label>Email:</label></br>
+			    <input name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="50"></br>
+			    <label>Phone:</label></br>
+			    <input type="text" name="phone" maxlength="12"></br>
+			    <label>Message:</label></br>
+			    <textarea maxlength="200"></textarea></br>
+			    <input type="submit" value="Submit">
+			    <a href="landing.html" class="cancel-button">Cancel</a>
+			  </fieldset>
+			</form>
+		</div>
+		<footer>
+			<div class="footer-text">Assignment 1</div>
+		</footer>
+
+		<script src="js/form_validation.js"></script>
+	</body>
+</html>
